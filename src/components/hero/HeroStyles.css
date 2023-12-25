@@ -1,11 +1,8 @@
-/* HeroStyles.css */
-
 .hero {
     width: 100%;
     height: 100vh;
     color: #fff;
     position: relative;
-    justify-content: center;
 }
 
 .overlay {
@@ -26,42 +23,46 @@
 
 .hero .content {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: inline-block;
-    left: 50%;
-    text-align: center;
-    justify-content: center;
-}
-
-.content button {
-    color: #ffffff;
-    max-width: 500px;
-    border: none;
-    border-radius: 6px;
-    padding: 12px 20px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 22px;
+    top: 0;
+    height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
 }
 
-.content button:hover {
-    box-shadow: none;
-    cursor: pointer;
-    box-shadow: 2px 7px 96px -2px rgba(154, 171, 237, 1);
+.form {
+    display: flex;
+    background-color: #ffffffcc;
+    color: #000;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 4px;
+    border-radius: 8px;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.content button i {
-    font-size: 30px;
-    padding-right: 5px;
+.form input[type=text] {
+    border: transparent;
+    background-color: transparent;
+    width: 400px;
+    font-size: 1.2rem;
+    font-family: 'Poppins',sans-serif;
+}
+
+.form input[type=text]:focus {
+    outline: none;
 }
 
 @media screen and (max-width: 940px) {
-    .content button {
+    .form input[type=text] {
         max-width: 275px;
     }
+
 }
