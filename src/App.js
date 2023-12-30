@@ -1,38 +1,85 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import ImgCarousel from './components/carousel/ImgCarousel';
+import FanzoneCarousel from './components/carouselFanzone/FanzoneCarousel';
 import Destinations from './components/destinations/Destinations'
 import Footer from './components/footer/Footer';
 import Hero from './components/hero/Hero'
 import Navbar from './components/navbar/Navbar'
-import Search from './components/search/Search';
 import Selects from './components/selects/Selects';
 import { CssBaseline, Grid } from '@material-ui/core';
 import List from './components/List/List';
-import Map from './components/Map/Map';
-import Header from './components/Header/Header';
+import { getPlacesData} from './api/travelAdvisorAPI';
+import { bestThingsToDoData } from "./helper/data";
+import { fanzonesData } from "./helper/data";
+const App = () => {
+  const [type, setType] = useState('restaurants');
+  const [rating, setRating] = useState('');
+  const [filteredPlaces, setFilteredPlaces] = useState([]);
+  const [coords, setCoords] = useState({});
+  const [places, setPlaces] = useState([]);
+  
 
-function App() {
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition(({ coords: { latitude, longitude } }) => {
+      setCoords({ lat: latitude, lng: longitude });
+    });
+  }, []);
+
+  useEffect(() => {
+    const filtered = places.filter((place) => Number(place.rating) > rating);
+
+    setFilteredPlaces(filtered);
+  }, [places ,rating]);
+
+  
+  useEffect(() => {
+    // Fetch restaurant data when coordinates are available
+    if (coords.lat && coords.lng) {
+      getPlacesData( type ,coords.lat, coords.lng)
+      .then((data) => {
+        setPlaces(data?.filter((place) => place.name && place.num_reviews > 0));
+        setFilteredPlaces([]);
+        setRating('');
+      });
+  }
+}, [type , coords]);
+
+function onPlaceSelect(value) {
+  console.log(value);
+  const lat = value.properties.lat;
+  const lng = value.properties.lon;
+
+  setCoords({ lat, lng });
+
+};
+
+function onSuggectionChange(value) {
+  console.log(value);
+};
+
   return (
-    <div>
+    <>
       <Navbar />
-      <Hero />
+      <Hero placeSelect={onPlaceSelect}
+            suggestionsChange={onSuggectionChange} />
       <CssBaseline />
-      <Header/>
       <Grid container spacing={3} style={{ width: '100%' }}>
-        <Grid item xs={12} md={4}>
-          <List/>
-        </Grid>
-        <Grid item xs={12} md={8} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <Map/>
+        <Grid item xs={12} md={12}>
+          <List 
+          places={filteredPlaces.length ? filteredPlaces : places}
+          type={type}
+          setType={setType}
+          rating={rating}
+          setRating={setRating}/>
         </Grid>
       </Grid>
       <Destinations />
-      <Search />
       <Selects />
-      <ImgCarousel />
+      <FanzoneCarousel fanzones = {fanzonesData} />
+      <ImgCarousel bestThingsToDo = {bestThingsToDoData} />
       <Footer />
-    </div>
+    </>
   );
-}
+};
 
 export default App;
