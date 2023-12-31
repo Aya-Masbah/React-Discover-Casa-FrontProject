@@ -7,9 +7,9 @@ import './FanzoneCarouselStyles.css';
 
 function FanzoneCarousel({ fanzones }) {
   return (
-    <div className='container'>
-      <h1>Best Things to Do in Casablanca</h1>
-      <h3>Explore the exciting activities and attractions in Casablanca</h3>
+    <div id='carouselFanZone' className='container'>
+      <h1>Fanzones</h1>
+      <h3>Epic Fan Zones to Experience the World Cup Like Never Before</h3>
 
       <Carousel
         className='carousel'

@@ -29,9 +29,6 @@
     border-radius: 10px;
 	  box-shadow: 0 0 5px black;
   }
-.cardBox:hover{
-    filter: grayscale(100%);
-  }
 .overlay {
     position: absolute;
     bottom: 0;

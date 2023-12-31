@@ -26,10 +26,10 @@ function Navbar() {
                 <Link to='destinations' activeClassName="active" className="nav-links" onClick={handleClick} smooth={true} duration={500} ><li>Destinations</li></Link>
                 </li>
                 <li className="nav-item">
-                <Link to='fanZone' activeClassName="active" className="nav-links" onClick={handleClick} smooth={true} duration={500} ><li>FanZones</li></Link>
+                <Link to='carouselFanZone' activeClassName="active" className="nav-links" onClick={handleClick} smooth={true} duration={500} ><li>FanZones</li></Link>
                 </li>
                 <li className="nav-item">
-                <Link to='ThingsToDo' activeClassName="active" className="nav-links" onClick={handleClick} smooth={true} duration={500} ><li>Things to Do</li></Link>
+                <Link to='carousel' activeClassName="active" className="nav-links" onClick={handleClick} smooth={true} duration={500} ><li>Things to Do</li></Link>
                 </li>
             </ul>
             <div className="hamburger" onClick={handleNav}>
@@ -41,8 +41,8 @@ function Navbar() {
                 <ul className="mobile-nav">
                 <Link to='home' smooth={true} duration={500} ><li>Home</li></Link>
                 <Link to='destinations' smooth={true} duration={500} ><li>Destinations</li></Link>
-                <Link to='fanZone' smooth={true} duration={500} ><li>FanZones</li></Link>
-                <Link to='thingsToDo' smooth={true} duration={500} ><li>Things to Do</li></Link>
+                <Link to='carouselFanZone' smooth={true} duration={500} ><li>FanZones</li></Link>
+                <Link to='carousel' smooth={true} duration={500} ><li>Things to Do</li></Link>
                 </ul>
                 <div className="mobile-menu-bottom">
                     <div className="social-icons">

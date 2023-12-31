@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, InputLabel, MenuItem, FormControl, Select } from '@material-ui/core';
+import { InputLabel, MenuItem, FormControl, Select } from '@material-ui/core';
 import "@splidejs/react-splide/css";
 import PlaceDetails from '../PlaceDetails/PlaceDetails';
 import useStyles from './styles.js';
@@ -11,8 +11,8 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
   
     
   return (
-    <div className={classes.container}>
-      <Typography variant="h1">Suggestions Around You</Typography>
+    <div id='destinations' className={classes.container}>
+          <h1>Suggestions Around You</h1>
           <FormControl className={classes.formControl}>
             <InputLabel id="type">Type</InputLabel>
             <Select id="type" value={type} onChange={(e) => setType(e.target.value)}>

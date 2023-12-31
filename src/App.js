@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import ImgCarousel from './components/carousel/ImgCarousel';
 import FanzoneCarousel from './components/carouselFanzone/FanzoneCarousel';
-import Destinations from './components/destinations/Destinations'
 import Footer from './components/footer/Footer';
 import Hero from './components/hero/Hero'
 import Navbar from './components/navbar/Navbar'
-import Selects from './components/selects/Selects';
 import { CssBaseline, Grid } from '@material-ui/core';
 import List from './components/List/List';
 import { getPlacesData} from './api/travelAdvisorAPI';
@@ -73,8 +71,6 @@ function onSuggectionChange(value) {
           setRating={setRating}/>
         </Grid>
       </Grid>
-      <Destinations />
-      <Selects />
       <FanzoneCarousel fanzones = {fanzonesData} />
       <ImgCarousel bestThingsToDo = {bestThingsToDoData} />
       <Footer />

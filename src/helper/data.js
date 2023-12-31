@@ -15,13 +15,13 @@ export const bestThingsToDoData = [
       id: 3,
       title: "Corniche Ain Diab",
       desc: "Relax at Corniche Ain Diab, a seaside promenade with cafes, restaurants, and beautiful views of the ocean. Perfect for a leisurely stroll.",
-      image: "https://live.staticflickr.com/5460/8971469431_9b9b1020ea_b.jpg",
+      image: "https://agenceimaginium.com/wp-content/uploads/2022/12/A_DSC1186-copie-1280x854.jpg",
     },
     {
       id: 4,
       title: "Morocco Mall",
       desc: "Shop at Morocco Mall, one of the largest shopping malls in Africa, offering a wide range of international and local brands.",
-      image: "https://www.mapbusiness.ma/wp-content/uploads/2020/07/morocco-mall.jpg",
+      image: "https://img.fotocommunity.com/morocco-mall-6c468a69-f5be-429e-a360-97334aadedbd.jpg?height=1080",
     },
     {
       id: 6,
@@ -33,7 +33,7 @@ export const bestThingsToDoData = [
       id: 7,
       title: "Parc de la Ligue Arabe",
       desc: "Relax at Parc de la Ligue Arabe, a peaceful park in the heart of Casablanca. Enjoy greenery, fountains, and a serene atmosphere.",
-      image: "https://casainvest.ma/sites/default/files/2022-04/Parc%20de%20la%20ligue%20Arabe%201.jpg",
+      image: "https://www.casablancacity.ma/couvertures/actualite/3vfHiUod0WGL3wT5cvVEFjfcLQi5fZCopnGmpQCo.jpeg",
     },
     {
       id: 8,
@@ -45,13 +45,13 @@ export const bestThingsToDoData = [
       id: 9,
       title: "Ain Diab Beach",
       desc: "Spend a day at Ain Diab Beach, a popular destination for sunbathing and water sports. Enjoy the sandy shores and the lively beach atmosphere.",
-      image: "https://www.holidify.com/images/cmsuploads/compressed/800px-Sidi_Abderahmane_Ain_Diab_Casablanca_2013_20220901121115.jpg",
+      image: "https://lh5.googleusercontent.com/p/AF1QipMygT_GyH6Z7zKfNCOZ9NQMyy_T7vvT_bBdlkx8=s1600",
     },
     {
       id: 10,
       title: "Casablanca Cathedral",
       desc: "Visit the ruins of Casablanca Cathedral, a historic church with an interesting blend of Gothic and Moroccan architectural styles. The cathedral, although no longer in use, holds a rich history.",
-      image: "https://2.bp.blogspot.com/-CoB2w-vnMmw/VOoC7nOd_1I/AAAAAAAAOow/2Aa0RhHZ_Ho/w1200-h630-p-k-no-nu/Casablanca%2BCathedral%2BThe%2Bcathedral%2Bwith%2Bunique%2Barchitecture-1.jpg",
+      image: "https://media-cdn.sygictraveldata.com/media/1200x630/612664395a40232133447d33247d383939313038343831",
     },
   ];
 
@@ -67,21 +67,21 @@ export const bestThingsToDoData = [
       id: 2,
       title: "Soccer Spectacle Hub",
       desc: "Soccer Spectacle Hub is your go-to destination for all things World Cup. Catch every goal, cheer for your favorite team, and enjoy a football-filled atmosphere.",
-      image: "https://sportpro.ma/wp-content/uploads/2022/09/image-3-1024x683.png",
+      image: "https://images.squarespace-cdn.com/content/v1/6203cc49f8283556b50af83e/8063b22b-802d-4c0b-91ba-c967fc508637/HAS03667.jpeg",
       address: "456 Goal Avenue, Casablanca",
     },
     {
       id: 3,
       title: "Futbol Fiesta Plaza",
       desc: "Immerse yourself in the World Cup fever at Futbol Fiesta Plaza. A vibrant fanzone with big screens, great food, and a festive crowd.",
-      image: "https://image.khaleejtimes.com/?uuid=42c2ed14-eb53-5b1e-b0ce-cbd876949b16&function=fit&type=preview&source=false&q=75&maxsize=1200&scaleup=0",
+      image: "https://www.visitdubai.com/-/media/gathercontent/event/b/budx-fifa-fan-festival-eventorganiser-nov-2022.jpg",
       address: "789 Goalie Lane, Casablanca",
     },
     {
       id: 4,
       title: "Stadium View Lounge",
       desc: "Get the best view of the World Cup action at Stadium View Lounge. With panoramic views and passionate fans, it's the perfect spot to enjoy the games.",
-      image: "https://imagevars.gulfnews.com/2022/11/21/sport_1849ada0c53_large.jpg",
+      image: "https://www.aljazeera.com/wp-content/uploads/2022/11/SOR03353.jpg",
       address: "101 Stadium Street, Casablanca",
     },
     {
