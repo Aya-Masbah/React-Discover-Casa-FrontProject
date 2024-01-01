@@ -29,7 +29,7 @@ function Footer() {
                 </div>
             </div>
             <div className="footer-content">
-            <p>© 2024 Your Website. All Rights Reserved.</p>
+            <p>© 2024. All Rights Reserved.</p>
             <p>Created by Aya Masbah and Oumaima Khafi</p>
       </div>
         </div>
