@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { HiOutlineMenuAlt4 } from 'react-icons/hi'
 import { AiOutlineClose } from 'react-icons/ai'
 import { FaFacebook, FaInstagram, FaPinterest, FaTwitter, FaYoutube } from 'react-icons/fa'
-
+import logo from '../../assets/logo.png';
 import { Link } from 'react-scroll'
 
 import './NavbarStyles.css'
@@ -14,9 +14,13 @@ function Navbar() {
     const handleClick = () => setClick(!click);
 
     return (
-        <div name='home' className={nav ? 'navbar navbar-bg' : 'navbar'}>
+        <div name='home' className={nav ? 'navbar navbar-bg' : 'navbar'} >
             <div className={nav ? 'logo dark' : 'logo'}>
-                <h2>Discover Casablanca</h2>
+            <img
+            style={{ height: "250px", width: "250px", position: "absolute", top: -40, left: -40 }}
+            src={logo}
+            alt="logo"
+            />
             </div>
             <ul className="nav-menu">
                 <li className="nav-item">

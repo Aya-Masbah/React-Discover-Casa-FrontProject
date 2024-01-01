@@ -8,7 +8,7 @@ function Footer() {
         <div className='footer'>
             <div className="container">
                 <div className="top">
-                    <h3>Discover Casablanca.</h3>
+                    <h3>Casa City</h3>
                     <div className="social">
                         <FaFacebook className='icon' />
                         <FaInstagram className='icon' />
@@ -28,6 +28,10 @@ function Footer() {
                     </div>
                 </div>
             </div>
+            <div className="footer-content">
+            <p>© 2024 Your Website. All Rights Reserved.</p>
+            <p>Created by Aya Masbah and Oumaima Khafi</p>
+      </div>
         </div>
     )
 }

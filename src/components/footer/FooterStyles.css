@@ -38,7 +38,20 @@
 .footer li {
     padding: .5rem;
 }
-
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Align text center for each line */
+  }
+  
+  /* Style for the "Created by" section */
+.footer-content p:last-child {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 5px; /* Add some space between the copyright and "Created by" sections */
+  }
 @media screen and (max-width: 1140px) {
     .footer ul {
         flex-direction: column;
