@@ -24,35 +24,35 @@ export const bestThingsToDoData = [
       image: "https://img.fotocommunity.com/morocco-mall-6c468a69-f5be-429e-a360-97334aadedbd.jpg?height=1080",
     },
     {
-      id: 6,
+      id: 5,
       title: "Royal Palace of Casablanca",
       desc: "Visit the Royal Palace of Casablanca, an impressive architectural landmark surrounded by beautiful gardens. While the palace is not open to the public, its exterior is worth seeing.",
       image: "https://planetofhotels.com/guide/sites/default/files/styles/max_1280/public/hero_banner/Royal_Palace_of_Casablanca.jpg",
     },
     {
-      id: 7,
+      id: 6,
       title: "Parc de la Ligue Arabe",
       desc: "Relax at Parc de la Ligue Arabe, a peaceful park in the heart of Casablanca. Enjoy greenery, fountains, and a serene atmosphere.",
       image: "https://www.casablancacity.ma/couvertures/actualite/3vfHiUod0WGL3wT5cvVEFjfcLQi5fZCopnGmpQCo.jpeg",
     },
     {
-      id: 8,
+      id: 7,
       title: "Villa des Arts",
       desc: "Explore Villa des Arts, an art museum showcasing contemporary Moroccan art. The museum often hosts temporary exhibitions and cultural events.",
       image: "https://www.wowabouts.com/z-media/2018/10/Villa%20Des%20Arts,%20Rabat%201.jpg",
     },
     {
-      id: 9,
+      id: 8,
       title: "Ain Diab Beach",
       desc: "Spend a day at Ain Diab Beach, a popular destination for sunbathing and water sports. Enjoy the sandy shores and the lively beach atmosphere.",
       image: "https://lh5.googleusercontent.com/p/AF1QipMygT_GyH6Z7zKfNCOZ9NQMyy_T7vvT_bBdlkx8=s1600",
     },
     {
-      id: 10,
+      id: 9,
       title: "Casablanca Cathedral",
       desc: "Visit the ruins of Casablanca Cathedral, a historic church with an interesting blend of Gothic and Moroccan architectural styles. The cathedral, although no longer in use, holds a rich history.",
       image: "https://media-cdn.sygictraveldata.com/media/1200x630/612664395a40232133447d33247d383939313038343831",
-    },
+    }
   ];
 
   export const fanzonesData = [
@@ -90,8 +90,7 @@ export const bestThingsToDoData = [
       desc: "Don't miss a moment of the 2030 World Cup at Goal Rush Plaza. An energetic fanzone with live broadcasts, themed events, and an electric atmosphere.",
       image: "https://www.ravepubs.com/wp-content/uploads/2022/12/infiled-LED-fifa-world-cup.png",
       address: "321 Goal Boulevard, Casablanca",
-    },
-    // Add more fanzones as needed
+    }
   ];
   
   

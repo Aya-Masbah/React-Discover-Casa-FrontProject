@@ -1,8 +1,7 @@
+@import url('https://fonts.cdnfonts.com/css/lexend');
 .carousel {
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
-
-
 .carousel img {
     height: 90vh;
     object-fit: cover;
@@ -15,9 +14,12 @@
 .container {
     position: relative;
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   
+h2{
+  font-family: 'Lexend',serif;
+}
 .image {
     display: block;
     padding-bottom: 1rem;
@@ -34,7 +36,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #171B1F;
+    background: -webkit-linear-gradient(#c1e5c5, #ea727c);
     border-radius: 10px;
     overflow: hidden;
     width: 100%;
@@ -43,39 +45,33 @@
     opacity: 0.9;
   }
   
+.arrow-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 20px; /* Adjust the left position as needed */
+  z-index: 1;
+}
+
+.next-button {
+  right: 20px; /* Adjust the right position as needed */
+  z-index: 1;
+}
 .container:hover .overlay {
     height: 40%;
   }
-  
-h1{
-    text-align: center;
-    font-weight : 600; 
-    color:rgb(0, 0, 0);
-    margin-bottom:2rem;
-    padding-top:1rem;
-  }
 
-h2{
-    text-align: center;
-    font-weight : 600; 
-    color:rgb(0, 0, 0);
-    margin-bottom:2rem;
-    padding-top:1rem;
-}
-
-h3{
-    text-align: center;
-    font-weight : 600; 
-    color:rgb(0, 0, 0);
-    margin-bottom:1rem;
-    
-}
-  
 .text {
     width: 100%;
     padding: 10px 45px 10px 10px;
     margin: 10px;
-    color: #000000;
+    color: #fff;
     transition: color 0.5s ease;
     font-size: 30px;
     font-weight: bold;
@@ -85,5 +81,13 @@ h3{
     transform: translate(-50%, -50%); /* Ajuster le transform pour centrer verticalement */
     text-align: center; /* Utiliser text-align: center; pour centrer horizontalement */
 }
+/* Media query for smaller screens */
+@media only screen and (max-width: 940px) {
+  .carousel img {
+      height: 150px; /* Adjust the image height for smaller screens */
+  }
 
-
+  .text {
+      font-size: 9px; /* Further reduce font size for even smaller screens */
+  }
+}

@@ -8,8 +8,6 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
   const List = ({ places, type, setType, rating, setRating }) => {
     const classes = useStyles();
     
-  
-    
   return (
     <div id='destinations' className={classes.container}>
           <h1>Suggestions Around You</h1>

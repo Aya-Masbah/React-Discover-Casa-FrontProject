@@ -11,18 +11,12 @@ export default makeStyles((theme) => ({
     height: '600px', display: 'flex', justifyContent: 'center', alignItems: 'center',
   },
   container: {
-    padding: '25px',
+    padding: '30px',
   },
   marginBottom: {
     marginBottom: '30px',
   },
   list: {
-    height: '75vh', overflow: 'auto',
-  },
-  h1: {
-    textAlign: 'center', 
-    fontWeight: 600,  // Utilisez 600 comme valeur de fontWeight
-    marginBottom: '2rem', 
-    paddingTop: '2rem',
+    height: '90vh', overflow: 'auto',
   },
 }));
