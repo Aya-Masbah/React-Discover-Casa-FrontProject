@@ -1,7 +1,7 @@
 import React from 'react'
 import './FooterStyles.css'
 import { FaFacebook, FaInstagram, FaPinterest, FaTwitter, FaYoutube } from 'react-icons/fa'
-
+import { Link } from 'react-scroll'
 
 function Footer() {
     return (
@@ -20,20 +20,10 @@ function Footer() {
                 <div className="bottom">
                     <div className="left">
                         <ul>
-                            <li>About</li>
-                            <li>Partnerships</li>
-                            <li>Careers</li>
-                            <li>Newsroom</li>
-                            <li>Advertising</li>
-                        </ul>
-                    </div>
-                    <div className="right">
-                        <ul>
-                            <li>Contact</li>
-                            <li>Terms</li>
-                            <li>Policy</li>
-                            <li>Privacy</li>
-                            <li>Contact</li>
+                        <Link to='home' smooth={true} duration={500} ><li>Home</li></Link>
+                        <Link to='destinations' smooth={true} duration={500} ><li>Destinations</li></Link>
+                        <Link to='carouselFanZone' smooth={true} duration={500} ><li>FanZones</li></Link>
+                        <Link to='carousel' smooth={true} duration={500} ><li>Things to Do</li></Link>
                         </ul>
                     </div>
                 </div>
