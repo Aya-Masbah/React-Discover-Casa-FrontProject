@@ -17,7 +17,7 @@ function Navbar() {
         <div name='home' className={nav ? 'navbar navbar-bg' : 'navbar'} >
             <div className={nav ? 'logo dark' : 'logo'}>
             <img
-            style={{ height: "250px", width: "250px", position: "absolute", top: -40, left: -40 }}
+            style={{ height: "240px", width: "240px", position: "absolute", top: -40, left: -40 }}
             src={logo}
             alt="logo"
             />
